@@ -1,0 +1,21 @@
+# Core ML/Transformer Libraries
+transformers>=4.38.0 # Or a recent version
+peft>=0.10.0      # Or a recent version
+bitsandbytes>=0.41.3 # Or a recent version
+torch>=2.1.0      # Or a recent version compatible with your CUDA
+torchvision       # Match torch version
+torchaudio        # Match torch version
+accelerate>=0.25.0 # Often needed by transformers/peft
+
+# Qwen-VL Specific
+# Note: Pinning to 0.0.8 as requested, check for newer versions if needed
+qwen-vl-utils[decord]==0.0.8
+
+# Data Handling & Utilities
+datasets>=2.14.0   # Or a recent version
+numpy>=1.21.0
+Pillow>=9.0.0      # For PIL (Image processing)
+tqdm>=4.60.0       # Progress bars
+
+# Plotting (Optional but included in original script)
+matplotlib>=3.5.0
